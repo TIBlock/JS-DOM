@@ -9,7 +9,7 @@ var button = document.getElementById("myButton");
 button.addEventListener('click', function(){
     var createBox = document.createElement("div");
     createBox.classList.add("box")
-    document.getElementById("boxContainer").appendChild(createBox);
+    document.getElementById("boxContainer").appendChild(createBox)
 });
 
 
