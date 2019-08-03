@@ -9,6 +9,9 @@ var sectHeader = document.querySelector("#section-header")
 console.log(sectHeader);
 
 
+
+
+
 sectHeader.addEventListener('click', function(){
 
     sect.toggleAttribute('hidden');
