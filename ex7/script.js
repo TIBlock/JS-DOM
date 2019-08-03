@@ -5,16 +5,28 @@
 
 var sect = document.querySelector("#section");
 console.log(sect);
-var sectHeader = document.querySelector("#section-header")
+var sectHeader = document.querySelector("#section-header");
 console.log(sectHeader);
-
-
+var totalHeight = document.getElementById("section").offsetHeight;
+console.log(totalHeight)
+sect.style.maxHeight = totalHeight + "px";
+var paragraph = document.getElementById("paragraph");
 
 
 
 sectHeader.addEventListener('click', function(){
+    if (sect.style.maxHeight === 0 + "px") {
+        sect.style.maxHeight = totalHeight + "px";
+    }else {
+        sect.style.maxHeight = 0; 
+    }
 
-    sect.toggleAttribute('hidden');
+    
+    //sect.classList.toggle("contentHide");
+    // paragraph.classList.toggle("contentHide")
+    // var paragraph = document.getElementById('paragraph').classList.toggle('content');
+    // sect.toggleAttribute("class", "content")
+    // sect.toggleAttribute('hidden');
 
 
 });

@@ -8,16 +8,23 @@
     width: 400px;
     background-color: yellow;
     margin: auto;
+    /* max-height: 144px; */
 }
 
 #section {
     padding: 5px;
 }
 
-/* .content {
+.content
+{
+    transition: max-height 0.2s ease-out;
+    overflow-y: hidden;
+}
+
+.contentHide {
     padding: 0 18px;
     background-color: white;
-    max-height: 0;
-    overflow: hidden;
     transition: max-height 0.2s ease-out;
-  } */
+    overflow: hidden;
+  }
+
