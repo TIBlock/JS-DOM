@@ -5,3 +5,10 @@
 #description, #search, #todo-list {
     font-size: 1.5em;
 }
+
+
+.strikethrough
+{
+    text-decoration: line-through;
+
+}
